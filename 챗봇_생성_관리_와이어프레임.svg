@@ -1,0 +1,40 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 좌측 컬럼 (미사용) -->
+  <rect x="0" y="0" width="200" height="900" fill="#f3f3f3" stroke="#bbb"/>
+  <text x="100" y="50" font-size="20" text-anchor="middle" fill="#aaa">(미사용)</text>
+
+  <!-- 중앙 컬럼 (생성/관리 UI) -->
+  <rect x="200" y="0" width="800" height="900" fill="#fff" stroke="#bbb"/>
+  <!-- 헤더 -->
+  <rect x="200" y="0" width="800" height="60" fill="#e0e7ef" stroke="#bbb"/>
+  <text x="600" y="38" font-size="24" text-anchor="middle" fill="#333">챗봇 생성/관리</text>
+  <text x="600" y="58" font-size="14" text-anchor="middle" fill="#888">ⓘ AI 컨텐츠, 저작권, 개인정보 안내</text>
+
+  <!-- 생성 폼 영역 -->
+  <rect x="270" y="100" width="660" height="320" rx="20" fill="#f3f4f6" stroke="#ccc"/>
+  <text x="600" y="140" font-size="20" text-anchor="middle" fill="#555">챗봇 생성 폼</text>
+  <text x="320" y="180" font-size="16" fill="#888">챗봇 이름</text>
+  <rect x="400" y="165" width="480" height="32" rx="8" fill="#fff" stroke="#bbb"/>
+  <text x="320" y="230" font-size="16" fill="#888">페르소나/프롬프트</text>
+  <rect x="400" y="215" width="480" height="60" rx="8" fill="#fff" stroke="#bbb"/>
+  <text x="320" y="310" font-size="16" fill="#888">예시 대화</text>
+  <rect x="400" y="295" width="480" height="60" rx="8" fill="#fff" stroke="#bbb"/>
+  <rect x="820" y="370" width="60" height="36" rx="8" fill="#60a5fa" stroke="#3578e5"/>
+  <text x="850" y="395" font-size="16" text-anchor="middle" fill="#fff">저장</text>
+
+  <!-- 챗봇 목록/관리 영역 -->
+  <rect x="270" y="440" width="660" height="220" rx="20" fill="#f9fafb" stroke="#ccc"/>
+  <text x="600" y="470" font-size="20" text-anchor="middle" fill="#555">내 챗봇 목록</text>
+  <rect x="320" y="500" width="560" height="40" rx="10" fill="#fff" stroke="#bbb"/>
+  <text x="600" y="525" font-size="16" text-anchor="middle" fill="#888">챗봇1 (수정/삭제/공유)</text>
+  <rect x="320" y="550" width="560" height="40" rx="10" fill="#fff" stroke="#bbb"/>
+  <text x="600" y="575" font-size="16" text-anchor="middle" fill="#888">챗봇2 (수정/삭제/공유)</text>
+
+  <!-- 푸터 -->
+  <rect x="200" y="850" width="800" height="50" fill="#e0e7ef" stroke="#bbb"/>
+  <text x="600" y="880" font-size="16" text-anchor="middle" fill="#333">© 2025 챗봇 서비스</text>
+
+  <!-- 우측 컬럼 (미사용) -->
+  <rect x="1000" y="0" width="200" height="900" fill="#f3f3f3" stroke="#bbb"/>
+  <text x="1100" y="50" font-size="20" text-anchor="middle" fill="#aaa">(미사용)</text>
+</svg>

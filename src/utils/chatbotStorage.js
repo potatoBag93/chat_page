@@ -24,6 +24,15 @@ export function getAllChatbotProfiles() {
   }
 }
 
+// 챗봇 프로필 삭제 (id: string)
+export function deleteChatbotProfile(id) {
+  const all = getAllChatbotProfiles();
+  if (all[id]) {
+    delete all[id];
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+  }
+}
+
 // 예시 데이터 등록
 export function seedExampleProfile() {
   saveChatbotProfile('demo', {

@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useState, useRef } from 'react';
 import { getChatbotProfile, seedExampleProfile } from './utils/chatbotStorage';
 import { fetchChatbotReply } from './utils/aiApi';
+import { useNavigate } from 'react-router-dom';
 
 function getIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
@@ -40,6 +41,7 @@ function App() {
   const [error, setError] = useState('');
   const chatEndRef = useRef(null);
   const [chatId, setChatId] = useState('demo');
+  const navigate = useNavigate();
 
   useEffect(() => {
     seedExampleProfile();
@@ -100,6 +102,7 @@ function App() {
         <header className="chat-header">
           <div className="chat-title">AI 챗봇 - {profile?.persona || '챗봇'}</div>
           <div className="chat-info">ⓘ 본 서비스는 AI가 생성한 컨텐츠를 포함하며, 저작권 및 이용 안내를 반드시 확인하세요.</div>
+          <button className="send-btn" style={{position:'absolute', right:32, top:24}} onClick={()=>navigate('/create')}>챗봇 생성/관리</button>
         </header>
         {/* 이미지 영역 */}
         <section className="image-section">

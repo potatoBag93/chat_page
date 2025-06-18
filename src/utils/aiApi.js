@@ -1,19 +1,22 @@
 // AI 챗봇 API 연동 예시 (OpenAI GPT-3.5 등)
 // 실제 서비스에서는 API 키/엔드포인트를 환경변수 등으로 분리 필요
 
-export async function fetchChatbotReply({ messages, persona, prompt }) {
+export async function fetchChatbotReply({ messages, persona, prompt, name }) {
   // 예시: OpenAI Chat API 포맷
-  const apiUrl = 'https://api.openai.com/v1/chat/completions';
-  const apiKey = 'YOUR_OPENAI_API_KEY'; // 실제 배포시 노출 금지!
+  const apiUrl = import.meta.env.VITE_OPENAI_API_URL || 'https://api.openai.com/v1/chat/completions';
+  const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
 
   // 메시지 포맷 변환
+  const systemContent =
+    (name ? `[챗봇 이름: ${name}] ` : '') +
+    (persona || '') + ' ' + (prompt || '');
   const chatMessages = [
-    { role: 'system', content: persona + ' ' + prompt },
+    { role: 'system', content: systemContent.trim() },
     ...messages.map(m => ({ role: m.role === 'bot' ? 'assistant' : 'user', content: m.text }))
   ];
 
   const body = {
-    model: 'gpt-3.5-turbo',
+    model: 'gpt-4.1-mini',
     messages: chatMessages,
     temperature: 0.7
   };

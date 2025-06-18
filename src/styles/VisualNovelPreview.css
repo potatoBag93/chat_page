@@ -1,0 +1,97 @@
+/* 미연시 게임처럼 이미지 표시를 위한 스타일 */
+.vn-scene-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.vn-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.vn-character {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90%;
+  max-height: 90%;
+  z-index: 10;
+  transition: all 0.5s ease;
+  /* 이미지 기본 위치 (중앙 하단) */
+}
+
+.vn-character.left {
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.vn-character.right {
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.vn-dialog-box {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.vn-character-name {
+  font-weight: bold;
+  color: #3578e5;
+  margin-bottom: 6px;
+}
+
+.vn-dialog-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.vn-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #f3f4f6;
+  color: #888;
+}
+
+.vn-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* 미리보기 컨트롤 */
+.vn-preview-controls {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 16px;
+}
+
+.position-buttons {
+  display: flex;
+  gap: 8px;
+}

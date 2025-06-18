@@ -1,0 +1,30 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 좌측 컬럼 (1) -->
+  <rect x="0" y="0" width="300" height="900" fill="#f3f3f3" stroke="#bbb"/>
+  <text x="150" y="50" font-size="24" text-anchor="middle" fill="#333">(미사용)</text>
+
+  <!-- 중앙 컬럼 (2) -->
+  <rect x="300" y="0" width="600" height="900" fill="#fff" stroke="#bbb"/>
+  <!-- 헤더 -->
+  <rect x="300" y="0" width="600" height="60" fill="#e0e7ef" stroke="#bbb"/>
+  <text x="600" y="38" font-size="24" text-anchor="middle" fill="#333">챗봇 헤더(타이틀/정보)</text>
+  <!-- 배경+인물 이미지 (확대) -->
+  <rect x="350" y="80" width="500" height="340" rx="20" fill="#dbeafe" stroke="#aaa"/>
+  <text x="600" y="250" font-size="18" text-anchor="middle" fill="#555">배경+인물 이미지</text>
+  <!-- 채팅창 (세로 비율 축소, 스크롤바 표시) -->
+  <rect x="350" y="440" width="500" height="180" rx="20" fill="#f9f9f9" stroke="#ccc"/>
+  <text x="600" y="460" font-size="16" text-anchor="middle" fill="#888">채팅 메시지 영역</text>
+  <rect x="830" y="450" width="10" height="160" rx="5" fill="#ddd" stroke="#bbb"/>
+  <rect x="830" y="470" width="10" height="40" rx="5" fill="#bbb" stroke="#888"/>
+  <text x="845" y="540" font-size="12" text-anchor="middle" fill="#aaa" transform="rotate(-90 845,540)">스크롤</text>
+  <!-- 입력창 -->
+  <rect x="400" y="740" width="400" height="50" rx="25" fill="#e6e6e6" stroke="#bbb"/>
+  <text x="600" y="770" font-size="16" text-anchor="middle" fill="#555">입력창</text>
+  <!-- 푸터 -->
+  <rect x="300" y="850" width="600" height="50" fill="#e0e7ef" stroke="#bbb"/>
+  <text x="600" y="880" font-size="16" text-anchor="middle" fill="#333">챗봇 푸터(설명/저작권 등)</text>
+
+  <!-- 우측 컬럼 (1) -->
+  <rect x="900" y="0" width="300" height="900" fill="#f3f3f3" stroke="#bbb"/>
+  <text x="1050" y="50" font-size="24" text-anchor="middle" fill="#333">(미사용)</text>
+</svg>

@@ -1,0 +1,14 @@
+/* 푸터 고정 스타일 */
+.layout-3col {
+  min-height: 100vh;
+  display: flex;
+}
+
+.center-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-footer {
+  margin-top: auto;
+}
